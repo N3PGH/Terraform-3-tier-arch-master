@@ -360,10 +360,14 @@ output "lb_dns_name" {
 }
 
 
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = "batch4pmdevopswithaws202477"  
+resource "aws_s3_bucket" "test_bucket" {
+  bucket = "mybucketwithaws2024"  
 
   acl    = "private"  
+  tags = {
+	Name = "My Bucket"
+	Environment = "Dev"
+  }
   versioning {
     enabled = true 
   }
