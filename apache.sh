@@ -4,4 +4,4 @@ systemctl start httpd
 systemctl status httpd
 cd /var/www/html
 git clone https://github.com/N3PGH/netflix-code.git
-mv netflixcodde/* .
+mv netflix-code/* .
